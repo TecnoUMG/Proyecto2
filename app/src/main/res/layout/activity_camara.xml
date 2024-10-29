@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Camara">
+
+    <Button
+        android:id="@+id/bottonTomar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomar"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="674dp" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="246dp"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:visibility="invisible" />
+</LinearLayout>
