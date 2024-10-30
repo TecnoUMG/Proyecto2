@@ -1,6 +1,8 @@
 package gt.edu.umg.proyecto;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -34,6 +36,12 @@ public class HomeActivity extends AppCompatActivity {
 
         //Para iniciar la BD
         dbContactos =new DbContactos(this);
+
+        //Listener para el boton foto
+        buttonFoto.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, Camara.class);
+            startActivity(intent);
+        });
 
         //Proceso para que el boton guardar, realice el guardado
         buttonGuardar.setOnClickListener(v ->{
